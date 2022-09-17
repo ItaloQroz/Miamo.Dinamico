@@ -1,0 +1,55 @@
+﻿using Miamo.DAL;
+using Miamo.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Miamo.BLL
+{
+    public class ProdutoBLL
+    {
+        ProdutoDAL objBLL = new ProdutoDAL();
+
+        //cadastrar
+        public void CadastraAlbum(ProdutoDTO objCad)
+        {
+            objBLL.Cadastrar(objCad);
+        }
+
+        //Listar
+        public List<ProdutoListDTO> ListarProduto()
+        {
+            return objBLL.Listar();
+        }
+
+        //Filtrar
+        public List<ProdutoListDTO> FiltrarProduto()
+        {
+            return objBLL.Filtrar();
+        }
+
+        public List<ProdutoListDTO> FiltrarProduto(int IdCategoria)
+        {
+            return objBLL.Filtrar(IdCategoria);
+        }
+
+        //editar
+        public void EditarAlbum(ProdutoDTO objEdita)
+        {
+            objBLL.Editar(objEdita);
+        }
+
+        //excluir
+        public void ExcluirAlbum(int objExclui)
+        {
+            objBLL.Excluir(objExclui);
+        }
+
+        public ProdutoListDTO SelecionarProduto(int idProduto)
+        {
+            return objBLL.Selecionar(idProduto);
+        }
+    }
+}
