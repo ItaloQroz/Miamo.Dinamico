@@ -19,7 +19,7 @@ namespace Miamo.DAL
         {
             try
             {
-                conn = new SqlConnection("COLOCA SA PORRA AQUI");
+                conn = new SqlConnection("Server=tcp:miamo-moda-intima.database.windows.net,1433;Initial Catalog=miamo_moda_intima;Persist Security Info=False;User ID=administrador;Password=Admin@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
                 conn.Open();
             }
             catch (Exception ex)

@@ -4,11 +4,15 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Miamo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Img/logoAp.png" rel="icon" />
+
+    <title>Musikaos</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-
-
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -19,11 +23,11 @@
             <nav>
                 <div class="menuC">
                     <a href="#home">
-                        <img src="../Img/logoAp.png" alt="logo" class="logo">Miamo</a>
+                        <img src="../Img/logoAp.png" alt="logo" class="logo">Musikaos</a>
                     <ul class="menuI">
-                        <li><a href="GerenciaCategoria.aspx">Gerenciar Categoria</a></li>
-                        <li><a href="GerenciaUsuario.aspx">Gerenciar Usuario</a></li>
-                         <li><a href="GerenciaProduto.aspx">Gerenciar Produto</a></li>
+                        <li><a href="ManagerAlbum.aspx">Manager Album</a></li>
+                        <li><a href="ManagerUsuario.aspx">Manager Usuario</a></li>
+                         <li><a href="ManagerGenero.aspx">Manager Genero</a></li>
                     </ul>
                 </div>
             </nav>
