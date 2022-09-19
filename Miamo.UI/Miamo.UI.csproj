@@ -77,8 +77,6 @@
     <Content Include="Css\media.css" />
     <Content Include="Css\reset.css" />
     <Content Include="Css\style.css" />
-    <Content Include="GerenciarProduto.aspx" />
-    <Content Include="GerenciarUsuario.aspx" />
     <Content Include="Img\imgCatalogo\BabyDolls\01.jpg" />
     <Content Include="Img\imgCatalogo\BabyDolls\06.jpg" />
     <Content Include="Img\imgCatalogo\BabyDolls\22.jpg" />
@@ -174,7 +172,6 @@
     <Content Include="Img\index\pijamaMasculinoAzulClaro02.jpeg" />
     <Content Include="Img\index\pijamaMasculinoAzulEscuro01.jpeg" />
     <Content Include="Img\index\SutiaAmamentacao1.jpeg" />
-    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -191,27 +188,6 @@
     </Compile>
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
-    </Compile>
-    <Compile Include="GerenciarProduto.aspx.cs">
-      <DependentUpon>GerenciarProduto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GerenciarProduto.aspx.designer.cs">
-      <DependentUpon>GerenciarProduto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GerenciarUsuario.aspx.cs">
-      <DependentUpon>GerenciarUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GerenciarUsuario.aspx.designer.cs">
-      <DependentUpon>GerenciarUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
