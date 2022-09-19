@@ -67,6 +67,118 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrapcss\bootstrap-grid.css" />
+    <Content Include="Content\bootstrapcss\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrapcss\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrapcss\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrapcss\bootstrap.css" />
+    <Content Include="Content\bootstrapcss\bootstrap.min.css" />
+    <Content Include="Content\bootstrapcss\catalogobootstrap.css" />
+    <Content Include="Css\media.css" />
+    <Content Include="Css\reset.css" />
+    <Content Include="Css\style.css" />
+    <Content Include="Img\imgCatalogo\BabyDolls\01.jpg" />
+    <Content Include="Img\imgCatalogo\BabyDolls\06.jpg" />
+    <Content Include="Img\imgCatalogo\BabyDolls\22.jpg" />
+    <Content Include="Img\imgCatalogo\BabyDolls\23.jpg" />
+    <Content Include="Img\imgCatalogo\BabyDolls\24.jpg" />
+    <Content Include="Img\imgCatalogo\Calcinhas\00.jpg" />
+    <Content Include="Img\imgCatalogo\Calcinhas\01.jpg" />
+    <Content Include="Img\imgCatalogo\Calcinhas\02.jpg" />
+    <Content Include="Img\imgCatalogo\Calcinhas\03.jpg" />
+    <Content Include="Img\imgCatalogo\Calcinhas\04.jpg" />
+    <Content Include="Img\imgCatalogo\Camisolas\01.jpg" />
+    <Content Include="Img\imgCatalogo\Camisolas\03.jpg" />
+    <Content Include="Img\imgCatalogo\Camisolas\CamisolaAmamentacao1.jpeg" />
+    <Content Include="Img\imgCatalogo\Camisolas\CatalogoCores.png" />
+    <Content Include="Img\imgCatalogo\fotosnovas\01.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\02.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\03.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\04.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\05.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\07.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\08.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\09.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\10.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\11.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\12.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\13.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\14.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\banner1.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\banner2.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\banner3.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\Carroseul1.png" />
+    <Content Include="Img\imgCatalogo\fotosnovas\Carrouseul2.png" />
+    <Content Include="Img\imgCatalogo\fotosnovas\Carrouseul3.png" />
+    <Content Include="Img\imgCatalogo\fotosnovas\Visão.jpg" />
+    <Content Include="Img\imgCatalogo\fotosnovas\Visão.png" />
+    <Content Include="Img\imgCatalogo\Lingieries\02.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\04.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\08.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\09.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\10.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\11.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\12.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\14.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\15.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\16.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\17.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\18.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\19.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\20.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\21.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\26,1.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\28.jpg" />
+    <Content Include="Img\imgCatalogo\Lingieries\29,1.jpg" />
+    <Content Include="Img\imgCatalogo\Modeladores\27.jpg" />
+    <Content Include="Img\imgCatalogo\Modeladores\CalçaPosCirurgica1.jpeg" />
+    <Content Include="Img\imgCatalogo\Modeladores\ModeladorAmamentacao1.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaAmericano.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaAmericano2.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaAmericano3.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaAmericanoCeda.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaMasculinoAzulClaro02.jpeg" />
+    <Content Include="Img\imgCatalogo\Novidades\PijamaMasculinoAzulEscuro01.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\PijamaAmericano.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\PijamaAmericano2.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\PijamaAmericanoCeda.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\pijamaMasculinoAzulClaro02.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\pijamaMasculinoAzulEscuro01.jpeg" />
+    <Content Include="Img\imgCatalogo\Pijamas\WhatsApp Image 2022-07-02 at 13.02.45.jpeg" />
+    <Content Include="Img\imgCatalogo\Sutias\01.jpg" />
+    <Content Include="Img\imgCatalogo\Sutias\02.jpg" />
+    <Content Include="Img\imgCatalogo\Sutias\05.jpg" />
+    <Content Include="Img\imgCatalogo\Sutias\27,1.jpg" />
+    <Content Include="Img\imgCatalogo\Sutias\SutiaAmamentacao1.jpeg" />
+    <Content Include="Img\index\03.jpg" />
+    <Content Include="Img\index\05.jpg" />
+    <Content Include="Img\index\08.jpg" />
+    <Content Include="Img\index\10.jpg" />
+    <Content Include="Img\index\27.jpg" />
+    <Content Include="Img\index\banner1.jpg" />
+    <Content Include="Img\index\banner2.jpg" />
+    <Content Include="Img\index\banner3.jpg" />
+    <Content Include="Img\index\bannerteste.jpg" />
+    <Content Include="Img\index\CalçaPosCirurgica1.jpeg" />
+    <Content Include="Img\index\CamisolaAmamentacao1.jpeg" />
+    <Content Include="Img\index\CatalogoCores.png" />
+    <Content Include="Img\index\LogoMiamo.gif" />
+    <Content Include="Img\index\MiamoDesde2007.png" />
+    <Content Include="Img\index\ModeladorAmamentacao1.jpeg" />
+    <Content Include="Img\index\ParaUsarNoiteDia.png" />
+    <Content Include="Img\index\PijamaAmericano.jpeg" />
+    <Content Include="Img\index\PijamaAmericano2.jpeg" />
+    <Content Include="Img\index\PijamaAmericanoCeda.jpeg" />
+    <Content Include="Img\index\pijamaMasculinoAzulClaro02.jpeg" />
+    <Content Include="Img\index\pijamaMasculinoAzulEscuro01.jpeg" />
+    <Content Include="Img\index\SutiaAmamentacao1.jpeg" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,7 +193,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.Master" />
+    <Content Include="Content\bootstrapcss\.DS_Store" />
+    <Content Include="Content\bootstrapcss\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrapcss\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrapcss\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrapcss\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrapcss\bootstrap.css.map" />
+    <Content Include="Content\bootstrapcss\bootstrap.min.css.map" />
+    <Content Include="Fonts\OpenSans-Regular.ttf" />
+    <Content Include="Fonts\Social-Circles-v1.1.otf" />
+    <Content Include="Fonts\Type Icons Color.ttf" />
     <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,7 +228,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <PropertyGroup>
