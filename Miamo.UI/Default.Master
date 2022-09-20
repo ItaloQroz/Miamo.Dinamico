@@ -25,9 +25,9 @@
                     <a href="icone/favicon-16x16.png">
                         <img src="../Img/logoAp.png" alt="logo" class="logo"></a><a href="#home">Miamo</a>
                     <ul class="menuI">
-                        <li><a href="ManagerAlbum.aspx">GerenciarProduto</a></li>
-                        <li><a href="ManagerUsuario.aspx">GerenciarUsuario</a></li>
-                         <li><a href="ManagerGenero.aspx">GerenciarCategoria</a></li>
+                        <li><a href="GerenciarProduto.aspx">GerenciarProduto</a></li>
+                        <li><a href="GerenciarUsuario.aspx">GerenciarUsuario</a></li>
+                         <li><a href="GerenciarCategoria.aspx">GerenciarCategoria</a></li>
                     </ul>
                 </div>
             </nav>
@@ -57,7 +57,7 @@
             </ul>
             <div class="footerI">
                 <h2>contact@Miamo</h2>
-                <h2>© all rights reserved enxame hospital 2012</h2>
+                <h2>© all rights reserved MIAMO 2022</h2>
             </div>
         </div>
     </footer>
