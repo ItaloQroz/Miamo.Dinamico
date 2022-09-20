@@ -103,6 +103,10 @@
     <Content Include="icone\favicon.ico" />
     <Content Include="icone\instagram-icone-noir.png" />
     <Content Include="icone\whatsapp.png" />
+    <Content Include="Img\add.png" />
+    <Content Include="Img\cancel.png" />
+    <Content Include="Img\delete.png" />
+    <Content Include="Img\edit.png" />
     <Content Include="Img\imgCatalogo\BabyDolls\01.jpg" />
     <Content Include="Img\imgCatalogo\BabyDolls\06.jpg" />
     <Content Include="Img\imgCatalogo\BabyDolls\22.jpg" />
@@ -198,6 +202,7 @@
     <Content Include="Img\index\pijamaMasculinoAzulClaro02.jpeg" />
     <Content Include="Img\index\pijamaMasculinoAzulEscuro01.jpeg" />
     <Content Include="Img\index\SutiaAmamentacao1.jpeg" />
+    <Content Include="Img\save.png" />
     <Content Include="Pages\GerenciarCategoria.aspx" />
     <Content Include="Pages\GerenciarProduto.aspx" />
     <Content Include="Pages\GerenciarUsuario.aspx" />

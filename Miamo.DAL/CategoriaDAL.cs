@@ -15,7 +15,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT * FROM GENERO ORDER BY NomeGenero", conn);
+                cmd = new SqlCommand("SELECT * FROM GENERO ORDER BY NomeCategoria", conn);
                 dr = cmd.ExecuteReader();
 
                 List<CategoriaDTO> lista = new List<CategoriaDTO>();
@@ -47,7 +47,8 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT * FROM GENERO WHERE IdGenero = @v1", conn);
+                cmd = new SqlCommand("SELECT * FRO" +
+                    "M GENERO WHERE IdGenero = @v1", conn);
                 cmd.Parameters.AddWithValue("@v1", idGenero);
                 dr = cmd.ExecuteReader();
 
