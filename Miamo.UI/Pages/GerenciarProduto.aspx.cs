@@ -44,10 +44,10 @@ namespace Miamo.UI.Pages
                 }
                 objModelo.FKCategoriaProduto = (gv2.FooterRow.FindControl("ddl1") as DropDownList).Text.Trim();
                 //chamando o metodo
-                objBLL.CadastraAlbum(objModelo);
+                objBLL.CadastraProduto(objModelo);
                 PopularGV();
-                (gv2.FooterRow.FindControl("txtNomeAlbumFooter") as TextBox).Focus();
-                lblMessage.Text = "Álbum " + objModelo.NomeProduto + " cadastrado com sucesso!!";
+                (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
+                lblMessage.Text = "Produto" + objModelo.NomeProduto + " cadastrado com sucesso!!";
             }
         }
         //edit
@@ -65,9 +65,9 @@ namespace Miamo.UI.Pages
         //save
         protected void gv2_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            objModelo.NomeProduto = (gv2.Rows[e.RowIndex].FindControl("txtNomeAlbum") as TextBox).Text.Trim();
-            objModelo.TamanhoProduto = (gv2.Rows[e.RowIndex].FindControl("txtArtistaAlbum") as TextBox).Text.Trim();
-            objModelo.PrecoProduto =Convert.ToInt32(gv2.Rows[e.RowIndex].FindControl("txtSeloAlbum") as TextBox);
+            objModelo.NomeProduto = (gv2.Rows[e.RowIndex].FindControl("txtNomeProduto") as TextBox).Text.Trim();
+            objModelo.TamanhoProduto = (gv2.Rows[e.RowIndex].FindControl("txtTamanhoProduto") as TextBox).Text.Trim();
+            objModelo.PrecoProduto =Convert.ToInt32(gv2.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox);
             //saving image
             if ((gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).HasFile)
             {
@@ -79,17 +79,17 @@ namespace Miamo.UI.Pages
             objModelo.FKCategoriaProduto = (gv2.Rows[e.RowIndex].FindControl("ddl1") as DropDownList).Text.Trim();
             objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
             //chamando o metodo
-            objBLL.EditarAlbum(objModelo);
+            objBLL.EditarProduto(objModelo);
             gv2.EditIndex = -1;
             PopularGV();
-            lblMessage.Text = "O album " + objModelo.NomeProduto + " foi editado com sucesso!!";
+            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi editado com sucesso!!";
         }
         protected void gv2_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
             objBLL.ExcluirAlbum(objModelo.IdProduto);
             PopularGV();
-            (gv2.FooterRow.FindControl("txtNomeAlbumFooter") as TextBox).Focus();
+            (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
             lblMessage.Text = "O album " + objModelo.NomeProduto + " foi eliminado com sucesso!!";
         }
         protected void gv2_PageIndexChanging(object sender, GridViewPageEventArgs e)
