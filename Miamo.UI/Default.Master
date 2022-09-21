@@ -23,11 +23,11 @@
             <nav>
                 <div class="menuC">
                     <a href="icone/favicon-16x16.png">
-                        <img src="../Img/logoAp.png" alt="logo" class="logo"></a><a href="#home">Miamo</a>
+                        <img src="Img/index/LogoMiamo.gif" alt="logo" class="logo"></a><a href="#home">Miamo</a>
                     <ul class="menuI">
-                        <li><a href="GerenciarProduto.aspx">GerenciarProduto</a></li>
-                        <li><a href="GerenciarUsuario.aspx">GerenciarUsuario</a></li>
-                         <li><a href="GerenciarCategoria.aspx">GerenciarCategoria</a></li>
+                        <li><a href="GerenciarProduto.aspx">Gerenciar Produto</a></li>
+                        <li><a href="GerenciarUsuario.aspx">Gerenciar Usuario</a></li>
+                         <li><a href="GerenciarCategoria.aspx">Gerenciar Categoria</a></li>
                     </ul>
                 </div>
             </nav>

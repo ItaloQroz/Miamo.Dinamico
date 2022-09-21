@@ -6,7 +6,7 @@
     <asp:Label ID="lblSessionMsg" runat="server" class="lead"/>
     <br /><hr /><br />
 
-    <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="IdGenero"
+    <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="IdCategoria"
         OnRowCommand="gv1_RowCommand"
         OnRowUpdating="gv1_RowUpdating"
         OnRowDeleting="gv1_RowDeleting"

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Miamo.BLL
 {
-    public class GeneroBLL
+    public class CategoriaBLL
     {
         CategoriaDAL objDAL = new CategoriaDAL();
 

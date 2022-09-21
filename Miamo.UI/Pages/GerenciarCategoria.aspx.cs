@@ -12,7 +12,7 @@ namespace Miamo.UI.Pages
     public partial class GerenciarCategoria : System.Web.UI.Page
     {
         CategoriaDTO objModelo = new CategoriaDTO();
-        GeneroBLL objBLL = new GeneroBLL();
+        CategoriaBLL objBLL = new CategoriaBLL();
 
         public void PopularGV()
         {
