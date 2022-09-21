@@ -8,31 +8,31 @@ using System.Threading.Tasks;
 
 namespace Miamo.BLL
 {
-    public class GeneroBLL
+    public class CategoriaBLL
     {
         CategoriaDAL objDAL = new CategoriaDAL();
 
-        public List<CategoriaDTO> ListarGenero()
+        public List<CategoriaDTO> ListarCategoria()
         {
             return objDAL.Listar();
         }
 
-        public CategoriaDTO SelecionarGenero(int id)
+        public CategoriaDTO SelecionarCategoria(int id)
         {
             return objDAL.Selecionar(id);
         }
 
-        public void CadastraGenero(CategoriaDTO objCad)
+        public void CadastraCategoria(CategoriaDTO objCad)
         {
             objDAL.Cadastrar(objCad);
         }
 
-        public void EditarGenero(CategoriaDTO objEdita)
+        public void EditarCategoria(CategoriaDTO objEdita)
         {
             objDAL.Editar(objEdita);
         }
 
-        public void ExcluirGenero(int objExclui)
+        public void ExcluirCategoria(int objExclui)
         {
             objDAL.Excluir(objExclui);
         }

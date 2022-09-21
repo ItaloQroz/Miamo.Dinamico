@@ -15,7 +15,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT * FROM GENERO ORDER BY NomeGenero", conn);
+                cmd = new SqlCommand("SELECT * FROM Categoria ORDER BY NomeCategoria", conn);
                 dr = cmd.ExecuteReader();
 
                 List<CategoriaDTO> lista = new List<CategoriaDTO>();
@@ -42,13 +42,13 @@ namespace Miamo.DAL
             }
         }
 
-        public CategoriaDTO Selecionar(int idGenero)
+        public CategoriaDTO Selecionar(int idCategoria)
         {
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT * FROM GENERO WHERE IdGenero = @v1", conn);
-                cmd.Parameters.AddWithValue("@v1", idGenero);
+                cmd = new SqlCommand("SELECT * FROM Categoria WHERE IdCategoria = @v1", conn);
+                cmd.Parameters.AddWithValue("@v1", idCategoria);
                 dr = cmd.ExecuteReader();
 
                 CategoriaDTO obj = new CategoriaDTO();
@@ -108,7 +108,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Genero SET NomeCategoria=@v1 WHERE IdCategoria=@v2", conn);
+                cmd = new SqlCommand("UPDATE Categoria SET NomeCategoria=@v1 WHERE IdCategoria=@v2", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeCategoria);
                 cmd.Parameters.AddWithValue("@v2", objEdita.IdCategoria);
 
