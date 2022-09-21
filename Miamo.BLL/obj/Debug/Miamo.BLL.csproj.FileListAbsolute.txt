@@ -1,0 +1,11 @@
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.BLL.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.BLL.pdb
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DAL.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DTO.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DAL.pdb
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DTO.pdb
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.AssemblyReference.cache
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CopyComplete
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.pdb
