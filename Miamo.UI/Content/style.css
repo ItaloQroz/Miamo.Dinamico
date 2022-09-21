@@ -36,7 +36,7 @@ footer {
 .menuC{
     width:100%;
     height:70px;
-    background-color:#1a1a1a;
+    background-color:#18d4c9;
 }
 
     .menuC a {
@@ -90,16 +90,16 @@ footer {
 
 
 .footerC {
-    position:relative;
-   display:flex;
-   justify-content:space-around;
-   justify-items:center;
-    width:100%;
-    background-color: #1a1a1a;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    background-color: #18d4c9;
     color: aliceblue;
     text-align: center;
     padding: 1em 0;
-    margin-top:1em;
+    margin-top: 1em;
     top: 395px;
     left: 1px;
     height: 240px;

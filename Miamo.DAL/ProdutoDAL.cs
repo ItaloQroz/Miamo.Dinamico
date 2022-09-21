@@ -16,7 +16,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("INSERT INTO Album (NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,FKGeneroAlbum) VALUES (@v1,@v2,@v3,@v4,@v5,@v6)", conn);
+                cmd = new SqlCommand("INSERT INTO Produto (NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,FKCategoriaProduto) VALUES (@v1,@v2,@v3,@v4,@v5,@v6)", conn);
                 cmd.Parameters.AddWithValue("@v1", objCad.NomeProduto);
                 cmd.Parameters.AddWithValue("@v2", objCad.TamanhoProduto);
                 cmd.Parameters.AddWithValue("@v3", objCad.PrecoProduto);
@@ -42,7 +42,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Album JOIN Categoia ON FKCategoriaProduto = IdProduto", conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoia ON FKCategoriaProduto = IdProduto", conn);
                 dr = cmd.ExecuteReader();
                 List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
                 while (dr.Read())
@@ -54,7 +54,7 @@ namespace Miamo.DAL
                     obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
-                    obj.CategoriaProduto = dr["NomeCategoria"].ToString();
+                    obj.CategoriaProduto = dr["NomeProduto"].ToString();
 
                     Lista.Add(obj);
                 }
@@ -78,7 +78,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Album SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,FKCategoriaProduto=@v6 WHERE IdAlbum=@v7", conn);
+                cmd = new SqlCommand("UPDATE Produto SET NomeProduto=@v1,TamanhoProduto=@v2,PrecoProduto=@v3,CorProduto=@v4,UrlImagemProduto=@v5,FKCategoriaProduto=@v6 WHERE IdProduto=@v7", conn);
                 cmd.Parameters.AddWithValue("@v1", objEdita.NomeProduto);
                 cmd.Parameters.AddWithValue("@v2", objEdita.TamanhoProduto);
                 cmd.Parameters.AddWithValue("@v3", objEdita.PrecoProduto);
@@ -128,7 +128,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Album JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
                 dr = cmd.ExecuteReader();
                 List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
                 while (dr.Read())
@@ -210,14 +210,14 @@ namespace Miamo.DAL
                     obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
-                    obj.CategoriaProduto = dr["NomeGenero"].ToString();
+                    obj.CategoriaProduto = dr["NomeProduto"].ToString();
                 }
                 return obj;
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Erro ao selecionar álbum!! " + ex.Message);
+                throw new Exception("Erro ao selecionar Produto!! " + ex.Message);
             }
             finally
             {

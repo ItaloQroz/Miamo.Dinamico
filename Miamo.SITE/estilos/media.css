@@ -1,0 +1,56 @@
+@media (max-width: 800px){
+
+    #polaroids #linha1, #polaroids #linha2{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #mapa-conteudo{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+    }
+
+    #google-maps{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #google-maps iframe {
+        width: 100%;
+        height: 550px;
+    }
+
+    #google-maps {
+        width: 100%;
+        height: 550px;
+    }
+
+   #visao-conteudo #centralizar-texto{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+    }
+
+     #google-maps{
+        width: 100%;
+    }
+
+    #lançamentos h1{
+        font-size: 50px;
+    }
+    
+}
+
+
+
+
+
