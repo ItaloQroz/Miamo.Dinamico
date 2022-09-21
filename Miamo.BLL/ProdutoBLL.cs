@@ -13,7 +13,7 @@ namespace Miamo.BLL
         ProdutoDAL objBLL = new ProdutoDAL();
 
         //cadastrar
-        public void CadastraAlbum(ProdutoDTO objCad)
+        public void CadastraProduto(ProdutoDTO objCad)
         {
             objBLL.Cadastrar(objCad);
         }
@@ -36,7 +36,7 @@ namespace Miamo.BLL
         }
 
         //editar
-        public void EditarAlbum(ProdutoDTO objEdita)
+        public void EditarProduto(ProdutoDTO objEdita)
         {
             objBLL.Editar(objEdita);
         }

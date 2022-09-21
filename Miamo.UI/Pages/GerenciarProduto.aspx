@@ -22,10 +22,10 @@
                     <asp:Label runat="server" Text='<%#Eval("NomeProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtNomeAlbum" runat="server" MaxLength="50" Text='<%#Eval("NomeProduto") %>' />
+                    <asp:TextBox ID="txtNomeProduto" runat="server" MaxLength="50" Text='<%#Eval("NomeProduto") %>' />
                 </EditItemTemplate>
                 <FooterTemplate>
-                    <asp:TextBox ID="txtNomeAlbumFooter" runat="server" />
+                    <asp:TextBox ID="txtNomeProdutoFooter" runat="server" />
                 </FooterTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Artista">
@@ -33,10 +33,10 @@
                     <asp:Label runat="server" Text='<%#Eval("TamanhoProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtArtistaAlbum" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>' />
+                    <asp:TextBox ID="txtTamanhoProduto" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>' />
                 </EditItemTemplate>
                 <FooterTemplate>
-                    <asp:TextBox ID="txtArtistaAlbumFooter" runat="server" />
+                    <asp:TextBox ID="txtTamanhoProdutoFooter" runat="server" />
                 </FooterTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Selo">
