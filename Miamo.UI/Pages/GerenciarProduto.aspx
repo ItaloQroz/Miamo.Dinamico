@@ -17,7 +17,7 @@
         PageSize="5"
         CssClass="table table-responsive table-striped">
         <Columns>
-            <asp:TemplateField HeaderText="Album">
+            <asp:TemplateField HeaderText="Produto">
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%#Eval("NomeProduto") %>' />
                 </ItemTemplate>
@@ -28,7 +28,7 @@
                     <asp:TextBox ID="txtNomeProdutoFooter" runat="server" />
                 </FooterTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Artista">
+            <asp:TemplateField HeaderText="TamanhoProduto">
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%#Eval("TamanhoProduto") %>' />
                 </ItemTemplate>
@@ -39,7 +39,7 @@
                     <asp:TextBox ID="txtTamanhoProdutoFooter" runat="server" />
                 </FooterTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Selo">
+            <asp:TemplateField HeaderText="PrecoProduto">
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%#Eval("PrecoProduto") %>' />
                 </ItemTemplate>
@@ -64,34 +64,36 @@
                 <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
             </asp:TemplateField>
             <%--DropDown--%>
-            <asp:TemplateField HeaderText="Categoria">
+             <asp:TemplateField HeaderText="CategoriaProduto">
                 <ItemTemplate>
-                    <asp:Label runat="server" Text='<%#Eval("DescricaoCategoria") %>' />
+                    <asp:Label runat="server" Text='<%#Eval("CategoriaProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
                     <asp:DropDownList ID="ddl1" runat="server">
                         <asp:ListItem Selected="True" Text="Selecione" />
                         <asp:ListItem Value="1" Text="BabyDolls" />
-                        <asp:ListItem Value="2" Text="" />
-                        <asp:ListItem Value="3" Text="Punk" />
-                        <asp:ListItem Value="4" Text="Eletrônico" />
-                        <asp:ListItem Value="5" Text="R&B" />
-                        <asp:ListItem Value="6" Text="Clássico" />
+                        <asp:ListItem Value="2" Text="Calcinhas & Fios" />
+                        <asp:ListItem Value="3" Text="Lingieries" />
+                        <asp:ListItem Value="4" Text="Pijamas" />
+                        <asp:ListItem Value="5" Text="Sutiãs" />
+                        <asp:ListItem Value="6" Text="Camisolas" />
                     </asp:DropDownList>
                 </EditItemTemplate>
                 <FooterTemplate>
                     <%--DropDown--%>
                     <asp:DropDownList ID="ddl1" runat="server">
-                        <asp:ListItem Selected="True" Text="Selecione" />
-                        <asp:ListItem Value="1" Text="Pop" />
-                        <asp:ListItem Value="2" Text="Rock" />
-                        <asp:ListItem Value="3" Text="Punk" />
-                        <asp:ListItem Value="4" Text="Eletrônico" />
-                        <asp:ListItem Value="5" Text="R&B" />
-                        <asp:ListItem Value="6" Text="Clássico" />
+                       <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Value="1" Text="BabyDolls" />
+                        <asp:ListItem Value="2" Text="Calcinhas & Fios" />
+                        <asp:ListItem Value="3" Text="Lingieries" />
+                        <asp:ListItem Value="4" Texst="Pijamas" />
+                        <asp:ListItem Value="5" Text="Sutiãs" />
+                        <asp:ListItem Value="6" Text="Camisolas" />
                     </asp:DropDownList>
                 </FooterTemplate>
             </asp:TemplateField>
+
+           
             <%--Botoes--%>
             <asp:TemplateField HeaderText="Opções">
                 <ItemTemplate>
@@ -114,9 +116,6 @@
         </Columns>
     </asp:GridView>
     <asp:Label runat="server" ID="lblMessage"/>
-
-
-
 
 
 </asp:Content>

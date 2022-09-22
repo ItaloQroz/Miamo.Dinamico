@@ -42,7 +42,7 @@ namespace Miamo.BLL
         }
 
         //excluir
-        public void ExcluirAlbum(int objExclui)
+        public void ExcluirProduto(int objExclui)
         {
             objBLL.Excluir(objExclui);
         }

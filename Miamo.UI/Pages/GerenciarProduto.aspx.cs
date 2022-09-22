@@ -87,10 +87,10 @@ namespace Miamo.UI.Pages
         protected void gv2_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
-            objBLL.ExcluirAlbum(objModelo.IdProduto);
+            objBLL.ExcluirProduto(objModelo.IdProduto);
             PopularGV();
             (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
-            lblMessage.Text = "O album " + objModelo.NomeProduto + " foi eliminado com sucesso!!";
+            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi eliminado com sucesso!!";
         }
         protected void gv2_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
