@@ -1,101 +1,78 @@
-﻿using Miamo.BLL;
-using Miamo.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Miamo.BLL;
+using Miamo.DTO;
 
 namespace Miamo.UI.Pages
 {
     public partial class GerenciarProduto : System.Web.UI.Page
     {
-        ProdutoDTO objModelo = new ProdutoDTO();
-        ProdutoBLL objBLL = new ProdutoBLL();
+        CategoriaDTO objModelo = new CategoriaDTO();
+        CategoriaBLL objBLL = new CategoriaBLL();
+
         public void PopularGV()
         {
-            gv2.DataSource = objBLL.ListarProduto();
-            gv2.DataBind();
-            lblMessage.Text = string.Empty;
+            gv1.DataSource = objBLL.ListarCategoria();
+            gv1.DataBind();
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 PopularGV();
+                lblMessage.Text = String.Empty;
             }
         }
-        //cadastrar (add)
-        protected void gv2_RowCommand(object sender, GridViewCommandEventArgs e)
+
+        protected void gv1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName.Equals("Adicionar"))
+            if (e.CommandName.Equals("Add"))
             {
-                objModelo.NomeProduto = (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Text.Trim();
-                objModelo.TamanhoProduto = (gv2.FooterRow.FindControl("txtTamanhoProdutoFooter") as TextBox).Text.Trim();
-                objModelo.PrecoProduto = Convert.ToInt32(gv2.FooterRow.FindControl("txtPrecoProdutoFooter") as TextBox);
-                //saving image
-                if ((gv2.FooterRow.FindControl("fUp1") as FileUpload).HasFile)
-                {
-                    var str = (gv2.FooterRow.FindControl("fUp1") as FileUpload).FileName.Trim();
-                    (gv2.FooterRow.FindControl("fUp1") as FileUpload).PostedFile.SaveAs(Server.MapPath("~/Img" + "/" + str));
-                    string CaminhoImg = "~/Img" + "/" + str.ToString();
-                    objModelo.UrlImagemProduto = CaminhoImg;
-                }
-                objModelo.FKCategoriaProduto = (gv2.FooterRow.FindControl("ddl1") as DropDownList).Text.Trim();
-                //chamando o metodo
-                objBLL.CadastraProduto(objModelo);
+                objModelo.NomeCategoria = (gv1.FooterRow.FindControl("txtNomeCategoriaFooter") as TextBox).Text.Trim();
+
+
+                objBLL.CadastraCategoria(objModelo);
                 PopularGV();
-                (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
-                lblMessage.Text = "Produto" + objModelo.NomeProduto + " cadastrado com sucesso!!";
+                (gv1.FooterRow.FindControl("txtNomeCategoriaFooter") as TextBox).Focus();
+                lblMessage.Text = "Categoria " + objModelo.NomeCategoria + " cadastrada com Sucesso !!";
             }
         }
-        //edit
-        protected void gv2_RowEditing(object sender, GridViewEditEventArgs e)
+
+        protected void gv1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            gv2.EditIndex = e.NewEditIndex;
+            objModelo.NomeCategoria = (gv1.Rows[e.RowIndex].FindControl("txtNomeCategoria") as TextBox).Text.Trim();
+            objModelo.IdCategoria = Convert.ToInt32(gv1.DataKeys[e.RowIndex].Value.ToString());
+            objBLL.EditarCategoria(objModelo);
+            gv1.EditIndex = -1;
+            PopularGV();
+            lblMessage.Text = "Categoria " + objModelo.NomeCategoria + " editado com Sucesso !!";
+
+        }
+
+        protected void gv1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            objModelo.IdCategoria = Convert.ToInt32(gv1.DataKeys[e.RowIndex].Value.ToString());
+            objBLL.ExcluirCategoria(objModelo.IdCategoria);
+            PopularGV();
+            lblMessage.Text = "Categoria " + objModelo.NomeCategoria + " eliminado com Sucesso !!";
+        }
+
+        protected void gv1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            gv1.EditIndex = e.NewEditIndex;
             PopularGV();
         }
-        //cancel
-        protected void gv2_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+
+
+        protected void gv1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-            gv2.EditIndex = -1;
+            gv1.EditIndex = -1;
             PopularGV();
-        }
-        //save
-        protected void gv2_RowUpdating(object sender, GridViewUpdateEventArgs e)
-        {
-            objModelo.NomeProduto = (gv2.Rows[e.RowIndex].FindControl("txtNomeProduto") as TextBox).Text.Trim();
-            objModelo.TamanhoProduto = (gv2.Rows[e.RowIndex].FindControl("txtTamanhoProduto") as TextBox).Text.Trim();
-            objModelo.PrecoProduto =Convert.ToInt32(gv2.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox);
-            //saving image
-            if ((gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).HasFile)
-            {
-                var str = (gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).FileName.Trim();
-                (gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).PostedFile.SaveAs(Server.MapPath("~/Img" + "/" + str));
-                string CaminhoImg = "~/Img" + "/" + str.ToString();
-                objModelo.UrlImagemProduto = CaminhoImg;
-            }
-            objModelo.FKCategoriaProduto = (gv2.Rows[e.RowIndex].FindControl("ddl1") as DropDownList).Text.Trim();
-            objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
-            //chamando o metodo
-            objBLL.EditarProduto(objModelo);
-            gv2.EditIndex = -1;
-            PopularGV();
-            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi editado com sucesso!!";
-        }
-        protected void gv2_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
-            objBLL.ExcluirProduto(objModelo.IdProduto);
-            PopularGV();
-            (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
-            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi eliminado com sucesso!!";
-        }
-        protected void gv2_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            gv2.PageIndex = e.NewPageIndex;
-            this.PopularGV();
         }
     }
 }
