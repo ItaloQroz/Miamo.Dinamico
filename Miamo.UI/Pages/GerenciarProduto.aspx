@@ -15,17 +15,87 @@
         CssClass="table table-responsive table-striped">
         <Columns>
 
-            <asp:TemplateField HeaderText="Nome da Categoria">
+            <asp:TemplateField HeaderText="Produto">
                 <ItemTemplate>
-                    <asp:Label runat="server" Text='<%#Eval("NomeCategoria") %>' />
+                    <asp:Label runat="server" Text='<%#Eval("NomeProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtNomeCategoria" runat="server" MaxLength="50" Text='<%#Eval("NomeCategoria") %>' />
+                    <asp:TextBox ID="txtNomeProduto" runat="server" MaxLength="50" Text='<%#Eval("NomeProduto") %>' />
                 </EditItemTemplate>
                 <FooterTemplate>
-                    <asp:TextBox ID="txtNomeCategoriaFooter" runat="server" />
+                    <asp:TextBox ID="txtNomeProdutoFooter" runat="server" />
                 </FooterTemplate>
             </asp:TemplateField>
+
+             <asp:TemplateField HeaderText="TamanhoProduto">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("TamanhoProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtTamanhoProduto" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtTamanhoProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+
+             <asp:TemplateField HeaderText="PrecoProduto">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("PrecoProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtPrecoProduto" runat="server" MaxLength="50" Text='<%#Eval("PrecoProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtPrecoProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+
+             <asp:TemplateField HeaderText="Imagem">
+                <ItemTemplate>
+                    <asp:Image ImageUrl='<%#Eval("UrlImagemProduto")%>' Width="100" Height="100" runat="server" />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:FileUpload ID="fUp1" runat="server" Text="Selecione a Imagem" />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:FileUpload ID="fUp1" runat="server" Text="Selecione a Imagem" />
+                </FooterTemplate>
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+            </asp:TemplateField>
+
+
+            <asp:TemplateField HeaderText="Gênero">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("DescricaoGenero") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:DropDownList ID="ddl1" runat="server">
+                        <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Value="1" Text="Pop" />
+                        <asp:ListItem Value="2" Text="Rock" />
+                        <asp:ListItem Value="3" Text="Punk" />
+                        <asp:ListItem Value="4" Text="Eletrônico" />
+                        <asp:ListItem Value="5" Text="R&B" />
+                        <asp:ListItem Value="6" Text="Clássico" />
+                    </asp:DropDownList>
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <%--DropDown--%>
+                    <asp:DropDownList ID="ddl1" runat="server">
+                        <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Value="1" Text="Pop" />
+                        <asp:ListItem Value="2" Text="Rock" />
+                        <asp:ListItem Value="3" Text="Punk" />
+                        <asp:ListItem Value="4" Text="Eletrônico" />
+                        <asp:ListItem Value="5" Text="R&B" />
+                        <asp:ListItem Value="6" Text="Clássico" />
+                    </asp:DropDownList>
+                </FooterTemplate>
+            </asp:TemplateField>
+
+
+
 
  
             <asp:TemplateField HeaderText="Opções">
