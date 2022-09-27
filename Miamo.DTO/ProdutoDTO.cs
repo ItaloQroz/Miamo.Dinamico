@@ -11,7 +11,7 @@ namespace Miamo.DTO
         public int IdProduto { get; set; }
         public string NomeProduto { get; set; }
         public string TamanhoProduto { get; set; }
-        public double PrecoProduto { get; set; }
+        public decimal PrecoProduto { get; set; }
         public string CorProduto { get; set; }
         public string UrlImagemProduto { get; set; }
         public string CategoriaProduto { get; set; }
