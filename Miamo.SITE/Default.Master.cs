@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Miamo.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,10 @@ namespace Miamo.SITE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            CategoriaBLL objBLL = new CategoriaBLL();
+
+            rptMenuCategoria.DataSource = objBLL.ListarCategoria();
+            rptMenuCategoria.DataBind();
 
         }
     }
