@@ -75,6 +75,7 @@
     <Content Include="bootstrapcss\bootstrap.min.css" />
     <Content Include="bootstrapcss\catalogobootstrap.css" />
     <Content Include="Catalogo.aspx" />
+    <Content Include="Contato.aspx" />
     <Content Include="estilos\media.css" />
     <Content Include="estilos\reset.css" />
     <Content Include="estilos\style.css" />
@@ -196,6 +197,13 @@
     <Compile Include="Catalogo.aspx.designer.cs">
       <DependentUpon>Catalogo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Contato.aspx.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contato.aspx.designer.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +230,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Miamo.BLL\Miamo.BLL.csproj">
+      <Project>{dcfbdbc0-109d-4834-ba0a-408bf06e548e}</Project>
+      <Name>Miamo.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miamo.DTO\Miamo.DTO.csproj">
+      <Project>{579746b4-2916-48a7-8ac5-9c114c87cbe2}</Project>
+      <Name>Miamo.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
