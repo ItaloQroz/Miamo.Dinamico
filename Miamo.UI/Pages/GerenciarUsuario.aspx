@@ -1,10 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="GerenciarUsuario.aspx.cs" Inherits="Miamo.UI.Pages.GerenciarUsuario" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:Label ID="lblSessionMsg" runat="server" class="lead"/>
-    <br /><hr /><br />
+    <asp:Label ID="lblSessionMsg" runat="server" class="lead" />
+    <br />
+    <hr />
+    <br />
 
     <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="IdUsuario"
         OnRowCommand="gv1_RowCommand"
@@ -76,7 +79,7 @@
             <asp:TemplateField HeaderText="Opções">
                 <ItemTemplate>
                     <asp:ImageButton ID="btnEditar" runat="server" ImageUrl="~/Img/edit.png" ToolTip="Editar" Width="30" Height="30" CommandName="Edit" />
-                    <asp:ImageButton ID="btnExcluir" runat="server" ImageUrl="~/Img/delete.png" ToolTip="Excluir" Width="30" Height="30" CommandName="Delete" OnClientClick="if (!confirm('Deseja relmente eliminar este registro??'))return false"/>
+                    <asp:ImageButton ID="btnExcluir" runat="server" ImageUrl="~/Img/delete.png" ToolTip="Excluir" Width="30" Height="30" CommandName="Delete" OnClientClick="if (!confirm('Deseja relmente eliminar este registro??'))return false" />
                 </ItemTemplate>
                 <EditItemTemplate>
                     <asp:ImageButton ID="btnSalvar" runat="server" ImageUrl="~/Img/save.png" ToolTip="Salvar" Width="30" Height="30" CommandName="Update" />

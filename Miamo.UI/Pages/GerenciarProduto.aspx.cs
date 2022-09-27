@@ -11,14 +11,12 @@ namespace Miamo.UI.Pages
 {
     public partial class GerenciarProduto : System.Web.UI.Page
     {
-
         ProdutoDTO objModelo = new ProdutoDTO();
         ProdutoBLL objBLL = new ProdutoBLL();
         public void PopularGV()
         {
             gv1.DataSource = objBLL.ListarProduto();
             gv1.DataBind();
-            lblMessage.Text = string.Empty;
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,6 +24,7 @@ namespace Miamo.UI.Pages
             if (!IsPostBack)
             {
                 PopularGV();
+                lblMessage.Text = string.Empty;
             }
         }
         //cadastrar (add)

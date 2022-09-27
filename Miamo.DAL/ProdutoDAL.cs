@@ -42,7 +42,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdProduto", conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
                 dr = cmd.ExecuteReader();
                 List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
                 while (dr.Read())
@@ -54,7 +54,7 @@ namespace Miamo.DAL
                     obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
-                    obj.CategoriaProduto = dr["NomeProduto"].ToString();
+                    obj.CategoriaProduto = dr["NomeCategoria"].ToString();
 
                     Lista.Add(obj);
                 }

@@ -1,10 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="GerenciarProduto.aspx.cs" Inherits="Miamo.UI.Pages.GerenciarProduto" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="GerenciarProduto2.aspx.cs" Inherits="Miamo.UI.Pages.GerenciarProduto2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:Label ID="lblSessionMsg" runat="server" class="lead" />
+     <asp:Label ID="lblSessionMsg" runat="server" class="lead" />
     <br />
     <hr />
     <br />
@@ -68,7 +67,7 @@
             </asp:TemplateField>
 
 
-            <%--<asp:TemplateField HeaderText="Gênero">
+            <asp:TemplateField HeaderText="Gênero">
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%#Eval("DescricaoGenero") %>' />
                 </ItemTemplate>
@@ -83,9 +82,9 @@
                         <asp:ListItem Value="6" Text="Clássico" />
                     </asp:DropDownList>
                 </EditItemTemplate>
-                <FooterTemplate>--%>
+                <FooterTemplate>
                     <%--DropDown--%>
-                    <%--<asp:DropDownList ID="ddl1" runat="server">
+                    <asp:DropDownList ID="ddl1" runat="server">
                         <asp:ListItem Selected="True" Text="Selecione" />
                         <asp:ListItem Value="1" Text="Pop" />
                         <asp:ListItem Value="2" Text="Rock" />
@@ -95,7 +94,7 @@
                         <asp:ListItem Value="6" Text="Clássico" />
                     </asp:DropDownList>
                 </FooterTemplate>
-            </asp:TemplateField>--%>
+            </asp:TemplateField>
 
 
 
@@ -120,8 +119,5 @@
     </asp:GridView>
     <br />
     <asp:Label ID="lblMessage" runat="server" Text="Label" />
-
-
-
 
 </asp:Content>
