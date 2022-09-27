@@ -35,6 +35,7 @@ namespace Miamo.UI.Pages
                 objModelo.NomeProduto = (gv1.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Text.Trim();
                 objModelo.TamanhoProduto = (gv1.FooterRow.FindControl("txtTamanhoProdutoFooter") as TextBox).Text.Trim();
                 objModelo.PrecoProduto = Convert.ToInt32(gv1.FooterRow.FindControl("txtPrecoProdutoFooter") as TextBox);
+                objModelo.CorProduto = (gv1.FooterRow.FindControl("txtCorProdutoFooter") as TextBox).Text.Trim();
                 //saving image
                 if ((gv1.FooterRow.FindControl("fUp1") as FileUpload).HasFile)
                 {
@@ -69,6 +70,7 @@ namespace Miamo.UI.Pages
             objModelo.NomeProduto = (gv1.Rows[e.RowIndex].FindControl("txtNomeProduto") as TextBox).Text.Trim();
             objModelo.TamanhoProduto = (gv1.Rows[e.RowIndex].FindControl("txtTamanhoProduto") as TextBox).Text.Trim();
             objModelo.PrecoProduto = Convert.ToInt32(gv1.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox);
+            objModelo.CorProduto = (gv1.FooterRow.FindControl("txtCorProdutoFooter") as TextBox).Text.Trim();
             //saving image
             if ((gv1.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).HasFile)
             {

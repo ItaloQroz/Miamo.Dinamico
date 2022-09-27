@@ -54,6 +54,18 @@
                 </FooterTemplate>
             </asp:TemplateField>
 
+            <asp:TemplateField HeaderText="CorProduto">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("CorProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtCorProduto" runat="server" MaxLength="50" Text='<%#Eval("CorProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtCorProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+
             <asp:TemplateField HeaderText="Imagem">
                 <ItemTemplate>
                     <asp:Image ImageUrl='<%#Eval("UrlImagemProduto")%>' Width="100" Height="100" runat="server" />
@@ -68,34 +80,39 @@
             </asp:TemplateField>
 
 
-            <%--<asp:TemplateField HeaderText="Gênero">
+            <asp:TemplateField HeaderText="Categoria">
                 <ItemTemplate>
-                    <asp:Label runat="server" Text='<%#Eval("DescricaoGenero") %>' />
+                    <asp:Label runat="server" Text='<%#Eval("CategoriaProduto") %>' />
                 </ItemTemplate>
                 <EditItemTemplate>
                     <asp:DropDownList ID="ddl1" runat="server">
+
                         <asp:ListItem Selected="True" Text="Selecione" />
-                        <asp:ListItem Value="1" Text="Pop" />
-                        <asp:ListItem Value="2" Text="Rock" />
-                        <asp:ListItem Value="3" Text="Punk" />
-                        <asp:ListItem Value="4" Text="Eletrônico" />
-                        <asp:ListItem Value="5" Text="R&B" />
-                        <asp:ListItem Value="6" Text="Clássico" />
+                        <asp:ListItem Value="1" Text="Lançamentos" />
+                        <asp:ListItem Value="2" Text="Roupa de Banho" />
+                        <asp:ListItem Value="5" Text="Lingeries" />
+                        <asp:ListItem Value="9" Text="Modeladores" />
+                        <asp:ListItem Value="10" Text="Camisolas" />
+                        <asp:ListItem Value="11" Text="Calcinhas & Fios" />
+                        <asp:ListItem Value="13" Text="Sutiãs" />
+
                     </asp:DropDownList>
                 </EditItemTemplate>
-                <FooterTemplate>--%>
+                <FooterTemplate>
                     <%--DropDown--%>
-                    <%--<asp:DropDownList ID="ddl1" runat="server">
+                    <asp:DropDownList ID="ddl1" runat="server">
                         <asp:ListItem Selected="True" Text="Selecione" />
-                        <asp:ListItem Value="1" Text="Pop" />
-                        <asp:ListItem Value="2" Text="Rock" />
-                        <asp:ListItem Value="3" Text="Punk" />
-                        <asp:ListItem Value="4" Text="Eletrônico" />
-                        <asp:ListItem Value="5" Text="R&B" />
-                        <asp:ListItem Value="6" Text="Clássico" />
+                        <asp:ListItem Value="1" Text="Lançamentos" />
+                        <asp:ListItem Value="2" Text="Roupa de Banho" />
+                        <asp:ListItem Value="5" Text="Lingeries" />
+                        <asp:ListItem Value="9" Text="Modeladores" />
+                        <asp:ListItem Value="10" Text="Camisolas" />
+                        <asp:ListItem Value="11" Text="Calcinhas & Fios" />
+                        <asp:ListItem Value="13" Text="Sutiãs" />
+
                     </asp:DropDownList>
                 </FooterTemplate>
-            </asp:TemplateField>--%>
+            </asp:TemplateField>
 
 
 
