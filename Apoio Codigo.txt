@@ -1,0 +1,234 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="GerenciarProduto.aspx.cs" Inherits="Miamo.UI.Pages.GerenciarProduto" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <asp:Label ID="lblSessionMsg" runat="server" class="lead"/>
+    <br /><hr /><br />
+
+    <asp:GridView runat="server" ID="gv2" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="IdProduto"
+        OnRowCommand="gv2_RowCommand"
+        OnRowEditing="gv2_RowEditing"
+        OnRowCancelingEdit="gv2_RowCancelingEdit"
+        OnRowUpdating="gv2_RowUpdating"
+        OnRowDeleting="gv2_RowDeleting"
+        OnPageIndexChanging="gv2_PageIndexChanging"
+        AllowPaging="true"
+        PageSize="5"
+        CssClass="table table-responsive table-striped">
+        <Columns>
+            <asp:TemplateField HeaderText="Produto">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("NomeProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtNomeProduto" runat="server" MaxLength="50" Text='<%#Eval("NomeProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtNomeProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="TamanhoProduto">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("TamanhoProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtTamanhoProduto" runat="server" MaxLength="50" Text='<%#Eval("TamanhoProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtTamanhoProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Selo">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("PrecoProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtPrecoProduto" runat="server" MaxLength="50" Text='<%#Eval("PrecoProduto") %>' />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:TextBox ID="txtPrecoProdutoFooter" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+            <%--Imagem--%>
+            <asp:TemplateField HeaderText="Imagem">
+                <ItemTemplate>
+                    <asp:Image ImageUrl='<%#Eval("UrlImagemProduto")%>' Width="100" Height="100" runat="server" />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:FileUpload ID="fUp1" runat="server" Text="Selecione a Imagem" />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <asp:FileUpload ID="fUp1" runat="server" Text="Selecione a Imagem" />
+                </FooterTemplate>
+                <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+            </asp:TemplateField>
+            <%--DropDown--%>
+            <asp:TemplateField HeaderText="Categoria">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%#Eval("CategoriaProduto") %>' />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:DropDownList ID="ddl1" runat="server">
+                        <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Value="1" Text="Babydolls" />
+                        <asp:ListItem Value="2" Text="Rock" />
+                        <asp:ListItem Value="3" Text="Punk" />
+                        <asp:ListItem Value="4" Text="Eletrônico" />
+                        <asp:ListItem Value="5" Text="R&B" />
+                        <asp:ListItem Value="6" Text="Clássico" />
+                    </asp:DropDownList>
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <%--DropDown--%>
+                    <asp:DropDownList ID="ddl1" runat="server">
+                        <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Value="1" Text="Pop" />
+                        <asp:ListItem Value="2" Text="Rock" />
+                        <asp:ListItem Value="3" Text="Punk" />
+                        <asp:ListItem Value="4" Text="Eletrônico" />
+                        <asp:ListItem Value="5" Text="R&B" />
+                        <asp:ListItem Value="6" Text="Clássico" />
+                    </asp:DropDownList>
+                </FooterTemplate>
+            </asp:TemplateField>
+            <%--Botoes--%>
+            <asp:TemplateField HeaderText="Opções">
+                <ItemTemplate>
+                    <%--Editar--%>
+                    <asp:ImageButton ImageUrl="~/Img/edit.png" CommandName="Edit" ToolTip="Editar" ID="btnEditar" Width="30" Height="30" runat="server" />
+                    <%--Excluir--%>
+                    <asp:ImageButton ImageUrl="~/Img/delete.png" CommandName="Delete" ToolTip="Excluir" ID="btnExcluir" Width="30" Height="30" runat="server" OnClientClick="if ( !confirm('Deseja realmente eliminar este registro ?? ')) return false" />
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <%--Salvar--%>
+                    <asp:ImageButton ImageUrl="~/Img/save.png" CommandName="Update" ToolTip="Salvar" ID="btnSalvar" Width="30" Height="30" runat="server" />
+                    <%--Cancelar--%>
+                    <asp:ImageButton ImageUrl="~/Img/cancel.png" CommandName="Cancel" ToolTip="Cancelar" ID="btnCancelar" Width="30" Height="30" runat="server" />
+                </EditItemTemplate>
+                <FooterTemplate>
+                    <%--Cadastrar--%>
+                    <asp:ImageButton ImageUrl="~/Img/add.png" CommandName="Adicionar" ID="btnAdicionar" Width="30" Height="30" runat="server" />
+                </FooterTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
+    <asp:Label runat="server" ID="lblMessage"/>
+
+
+
+</asp:Content>
+
+
+
+
+
+
+
+
+*****************************
+
+
+
+using Miamo.BLL;
+using Miamo.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Miamo.UI.Pages
+{
+    public partial class GerenciarProduto : System.Web.UI.Page
+    {
+        ProdutoDTO objModelo = new ProdutoDTO();
+        ProdutoBLL objBLL = new ProdutoBLL();
+        public void PopularGV()
+        {
+            gv2.DataSource = objBLL.ListarProduto();
+            gv2.DataBind();
+            lblMessage.Text = string.Empty;
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+           
+            if (!IsPostBack)
+            {
+                PopularGV();
+            }
+        }
+        //cadastrar (add)
+        protected void gv2_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName.Equals("Adicionar"))
+            {
+                objModelo.NomeProduto = (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Text.Trim();
+                objModelo.TamanhoProduto = (gv2.FooterRow.FindControl("txtTamanhoProdutoFooter") as TextBox).Text.Trim();
+                objModelo.PrecoProduto = Convert.ToInt32(gv2.FooterRow.FindControl("txtPrecoProdutoFooter") as TextBox);
+                //saving image
+                if ((gv2.FooterRow.FindControl("fUp1") as FileUpload).HasFile)
+                {
+                    var str = (gv2.FooterRow.FindControl("fUp1") as FileUpload).FileName.Trim();
+                    (gv2.FooterRow.FindControl("fUp1") as FileUpload).PostedFile.SaveAs(Server.MapPath("~/Img" + "/" + str));
+                    string CaminhoImg = "~/Img" + "/" + str.ToString();
+                    objModelo.UrlImagemProduto = CaminhoImg;
+                }
+                objModelo.FKCategoriaProduto = (gv2.FooterRow.FindControl("ddl1") as DropDownList).Text.Trim();
+                //chamando o metodo
+                objBLL.CadastraProduto(objModelo);
+                PopularGV();
+                (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
+                lblMessage.Text = "Produto" + objModelo.NomeProduto + " cadastrado com sucesso!!";
+            }
+        }
+        //edit
+        protected void gv2_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            gv2.EditIndex = e.NewEditIndex;
+            PopularGV();
+        }
+        //cancel
+        protected void gv2_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            gv2.EditIndex = -1;
+            PopularGV();
+        }
+        //save
+        protected void gv2_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            objModelo.NomeProduto = (gv2.Rows[e.RowIndex].FindControl("txtNomeProduto") as TextBox).Text.Trim();
+            objModelo.TamanhoProduto = (gv2.Rows[e.RowIndex].FindControl("txtTamanhoProduto") as TextBox).Text.Trim();
+            objModelo.PrecoProduto =Convert.ToInt32(gv2.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox);
+            //saving image
+            if ((gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).HasFile)
+            {
+                var str = (gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).FileName.Trim();
+                (gv2.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).PostedFile.SaveAs(Server.MapPath("~/Img" + "/" + str));
+                string CaminhoImg = "~/Img" + "/" + str.ToString();
+                objModelo.UrlImagemProduto = CaminhoImg;
+            }
+            objModelo.FKCategoriaProduto = (gv2.Rows[e.RowIndex].FindControl("ddl1") as DropDownList).Text.Trim();
+            objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
+            //chamando o metodo
+            objBLL.EditarProduto(objModelo);
+            gv2.EditIndex = -1;
+            PopularGV();
+            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi editado com sucesso!!";
+        }
+        protected void gv2_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            objModelo.IdProduto = Convert.ToInt32(gv2.DataKeys[e.RowIndex].Value.ToString());
+            objBLL.ExcluirProduto(objModelo.IdProduto);
+            PopularGV();
+            (gv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
+            lblMessage.Text = "O Produto " + objModelo.NomeProduto + " foi eliminado com sucesso!!";
+        }
+        protected void gv2_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gv2.PageIndex = e.NewPageIndex;
+            this.PopularGV();
+        }
+    }
+}

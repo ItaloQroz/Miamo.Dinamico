@@ -42,7 +42,7 @@ namespace Miamo.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoia ON FKCategoriaProduto = IdProduto", conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdProduto", conn);
                 dr = cmd.ExecuteReader();
                 List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
                 while (dr.Read())

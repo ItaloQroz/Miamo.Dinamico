@@ -50,7 +50,7 @@ namespace Miamo.UI.Pages
             objBLL.EditarCategoria(objModelo);
             gv1.EditIndex = -1;
             PopularGV();
-            lblMessage.Text = "Genero " + objModelo.NomeCategoria + " editado com Sucesso !!";
+            lblMessage.Text = "Categoria " + objModelo.NomeCategoria + " editado com Sucesso !!";
 
         }
 

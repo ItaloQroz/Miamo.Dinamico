@@ -1,0 +1,12 @@
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\bin\Debug\Miamo.DTO.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\bin\Debug\Miamo.DTO.pdb
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.AssemblyReference.cache
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.dll
+C:\Users\Romilson\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.pdb
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\bin\Debug\Miamo.DTO.dll
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\bin\Debug\Miamo.DTO.pdb
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.AssemblyReference.cache
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.dll
+C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.pdb

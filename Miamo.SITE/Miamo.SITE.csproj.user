@@ -16,6 +16,10 @@
         <WebProjectProperties>
           <StartPageUrl>Catalogo.aspx</StartPageUrl>
           <StartAction>SpecificPage</StartAction>
+          <StartPageUrl>Contato.aspx</StartPageUrl>
+          <StartAction>SpecificPage</StartAction>
+          <StartAction>CurrentPage</StartAction>
+          <StartAction>CurrentPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>
           <NativeDebugging>False</NativeDebugging>

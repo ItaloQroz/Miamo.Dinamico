@@ -11,6 +11,7 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="icone/favicon.ico" rel="icon" />
 
+
     <title>Miamo</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -22,23 +23,23 @@
         <header>
             <nav>
                 <div class="menuC">
-                    <a href="icone/favicon-16x16.png">
-                        <img src="Img/index/LogoMiamo.gif" alt="logo" class="logo"></a><a href="#home">Miamo</a>
+                    <a href="#home">
+                        <img src="../Img/index/LogoMiamo.gif" class="logo">
+                    </a>
+                    
                     <ul class="menuI">
                         <li><a href="GerenciarProduto.aspx">Gerenciar Produto</a></li>
                         <li><a href="GerenciarUsuario.aspx">Gerenciar Usuario</a></li>
                          <li><a href="GerenciarCategoria.aspx">Gerenciar Categoria</a></li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-
-        <main>
             <div class="container-fluid ajuste">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-        </main>
+            </nav>
+        </header>
+
     </form>
     <%--footer--%>
     <footer>
@@ -50,7 +51,7 @@
             <ul class="footerLista">
                 <li><a href="#">f</a></li>
                 <li>
-                <h2>Leprous pigs from outer space attacking our planet Trash rising.</h2>
+               
                     <a href="#">y</a></li>
                 <li><a href="#">t</a></li>
                 <li><a href="#">c</a></li>
