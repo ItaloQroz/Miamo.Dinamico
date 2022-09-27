@@ -4,16 +4,115 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon" />
+    <title>MIAMO Catálogo</title>
+    <link rel="stylesheet" href="estilos/reset.css" />
+    <link rel="stylesheet" href="estilos/media.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+    <!-- font italica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="bootstrapcss/catalogobootstrap.css" rel="stylesheet">
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
+
+            <header>
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <div id="nav.menu" class="container-fluid">
+                        <a href="index.html">
+                            <img id="logo" src="img/index/LogoMiamo.gif" alt="logo MIAMO" /></a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+                        <div class="dropdown-menu">
+
+                                    <asp:Repeater ID="Repeater1" runat="server">
+                                        <ItemTemplate>
+
+                                            <a class="dropdown-item" href="Catalogo.aspx?IdCategoria=<%# Eval("IdCategoria") %>"><%# Eval("NomeCategoria") %></a>
+
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </div>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                                <div class="dropdown-menu">
+
+                                    <asp:Repeater ID="rptMenuCategoria" runat="server">
+                                        <ItemTemplate>
+
+                                            <a class="dropdown-item" href="Catalogo.aspx?IdCategoria=<%# Eval("IdCategoria") %>"><%# Eval("NomeCategoria") %></a>
+
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+
+                                </div>
+
+                                <%--                     <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Veja Mais
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item"><a href="index.html#lancamentos">Novidades</a></li>
+                                        <li class="dropdown-item"><a href="index.html#polaroids">Nossos Produtos</a></li>
+                                        <li class="dropdown-item"><a href="index.html#mapa-conteudo">Nossa Localização</a></li>
+                                        <li class="dropdown-item"><a href="index.html#sbr-empresa">Sobre á Empresa</a></li>
+
+                                    </ul>
+                                </li>--%>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown-item"><a href="#nav-lancamentos">Lançamentos</a></li>
+                                        <li class="dropdown-item"><a href="#nav-modeladores">Modeladores</a></li>
+                                        <li class="dropdown-item"><a href="#nav-camisolas">Camisolas</a></li>
+                                        <li class="dropdown-item"><a href="#nav-calcinhas">Calcinhas & Fios</a></li>
+                                        <li class="dropdown-item"><a href="#nav-lingieries">Lingieries</a></li>
+                                        <li class="dropdown-item"><a href="#nav-sutias">Sutiãs</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <li class="nav-item"><a href="cadastro.html">Cadastro</a></li>
+
+                        <%--<form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="O Que Procura?" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Procurar</button>
+                        </form>--%>
+
+                    </div>
+
+                </nav>
+            </header>
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+
+            <footer>
+                <section class="footer-container">
+                    <h5>Direitos Reservados</h5>
+
+                </section>
+            </footer>
+
         </div>
     </form>
 </body>
