@@ -20,3 +20,14 @@ C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.B
 C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CopyComplete
 C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.dll
 C:\Users\claudio.dduarte\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.pdb
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.BLL.dll
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.BLL.pdb
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.DAL.dll
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.DTO.dll
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.DAL.pdb
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\bin\Debug\Miamo.DTO.pdb
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.AssemblyReference.cache
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CopyComplete
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\obj\Debug\Miamo.BLL.dll
+C:\Users\Italo\OneDrive\Área de Trabalho\MiamoProjeto\Miamo.BLL\obj\Debug\Miamo.BLL.pdb

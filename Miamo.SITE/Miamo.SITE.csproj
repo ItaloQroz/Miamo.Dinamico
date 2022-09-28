@@ -360,6 +360,10 @@
       <Project>{579746b4-2916-48a7-8ac5-9c114c87cbe2}</Project>
       <Name>Miamo.DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Miamo.UI\Miamo.UI.csproj">
+      <Project>{71c97876-c5d6-4b42-a7a6-50b1e631dff5}</Project>
+      <Name>Miamo.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
