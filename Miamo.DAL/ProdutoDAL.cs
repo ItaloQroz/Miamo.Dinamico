@@ -123,21 +123,21 @@ namespace Miamo.DAL
         }
 
         //filtrar
-        public List<ProdutoListDTO> Filtrar()
+        public List<FiltroProdutoDTO> Filtrar()
         {
             try
             {
                 Conectar();
                 cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto = IdCategoria", conn);
                 dr = cmd.ExecuteReader();
-                List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
+                List<FiltroProdutoDTO> Lista = new List<FiltroProdutoDTO>();
                 while (dr.Read())
                 {
-                    ProdutoListDTO obj = new ProdutoListDTO();
+                    FiltroProdutoDTO obj = new FiltroProdutoDTO();
                     obj.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                     obj.NomeProduto = dr["NomeProduto"].ToString();
                     obj.TamanhoProduto = dr["TamanhoProduto"].ToString();
-                    obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
+                    obj.PrecoProduto = dr["PrecoProduto"].ToString();
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["CategoriaProduto"].ToString();
@@ -158,21 +158,23 @@ namespace Miamo.DAL
 
         }
 
-        public List<ProdutoListDTO> Filtrar(int IdCategoria)
+        public List<FiltroProdutoDTO> Filtrar(int IdCategoria)
         {
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto =" + IdCategoria ,conn);
+                cmd = new SqlCommand("SELECT IdProduto,NomeProduto,TamanhoProduto,PrecoProduto,CorProduto,UrlImagemProduto,NomeCategoria FROM Produto JOIN Categoria ON FKCategoriaProduto =IdCategoria WHERE FKCategoriaProduto = @v1", conn);
+                cmd.Parameters.AddWithValue("@v1", IdCategoria);
+
                 dr = cmd.ExecuteReader();
-                List<ProdutoListDTO> Lista = new List<ProdutoListDTO>();
+                List<FiltroProdutoDTO> Lista = new List<FiltroProdutoDTO>();
                 while (dr.Read())
                 {
-                    ProdutoListDTO obj = new ProdutoListDTO();
+                    FiltroProdutoDTO obj = new FiltroProdutoDTO();
                     obj.IdProduto = Convert.ToInt32(dr["IdProduto"]);
                     obj.NomeProduto = dr["NomeProduto"].ToString();
                     obj.TamanhoProduto = dr["TamanhoProduto"].ToString();
-                    obj.PrecoProduto = Convert.ToDecimal(dr["PrecoProduto"]);
+                    obj.PrecoProduto = dr["PrecoProduto"].ToString();
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
                     obj.CategoriaProduto = dr["CategoriaProduto"].ToString();
