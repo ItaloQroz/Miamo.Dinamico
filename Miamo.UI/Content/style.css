@@ -160,12 +160,40 @@ footer {
 }
 
 .formulario{
-    width:40%;
+    width:35%;
     height:auto;
     padding:8em 5em;
     margin:0 auto;
 }
 .table {
     --bs-table-striped-bg: #18d4c98b !important;
+}
+
+.fundo {
+    background-image: url(../Img/index/LogoMiamo.gif);
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    width: 100%;
+    background-position-x:center;
+    background-position-y: 50px;
+
+
+    
+}
+
+.formulario h1 {
+   
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    background-color: #18d4c98b;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+
+#btnEntrar, #btnCancelar {
+    background-color: #18d4c98b;
+    color: white;
 }
 
