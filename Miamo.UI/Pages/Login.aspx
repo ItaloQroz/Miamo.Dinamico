@@ -13,13 +13,15 @@
     <title>Miamo</title>
 </head>
 <body>
+
+    <div class="fundo" runat="server" id="fundo">
     <form id="form1" runat="server">
 
         <div class="formularioC">
 
             <div class="formulario text-dark ">
                 <br />
-                <h1 class="text-dark font-weight-light">Autenticação</h1>
+                <h1 class="font-weight-light">Autenticação</h1>
                 <br />
                 <asp:Label runat="server" Text="Usuário" CssClass="lead" />
                 <asp:TextBox AutoCompleteType="Disabled" ID="txtUser" CssClass="form-control" MaxLength="50" runat="server" Width="100%"></asp:TextBox>
@@ -44,5 +46,6 @@
 
 
     </form>
+    </div>
 </body>
 </html>
