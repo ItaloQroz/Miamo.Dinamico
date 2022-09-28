@@ -30,7 +30,8 @@ namespace Miamo.BLL
             return objBLL.Filtrar();
         }
 
-        public List<FiltroProdutoDTO> FiltrarProduto(int IdCategoria)
+        public List<FiltroProdutoDTO
+            > FiltrarProduto(int IdCategoria)
         {
             return objBLL.Filtrar(IdCategoria);
         }
