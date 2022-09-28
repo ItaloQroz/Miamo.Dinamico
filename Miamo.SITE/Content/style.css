@@ -1,0 +1,153 @@
+﻿*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    list-style:none;
+}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SocialCircles';
+    src: url('../Fonts/Social-Circles-v1.1.otf');
+}
+
+@font-face {
+    font-family: 'TypeIcons';
+    src: url('../Fonts/Type Icons Color.ttf');
+}
+
+body {
+    font-family: 'OpenSans';
+}
+
+main{
+    padding-top:10px;
+}
+
+footer {
+    padding-top: 50px;
+}
+
+.menuC{
+    width:100%;
+    height:70px;
+    background-color:#1a1a1a;
+}
+
+    .menuC a {
+        line-height: 70px;
+        height: 70px;
+        padding: 25px 10px;
+        transition: .5s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+
+.logo {
+    height: 70px;
+    padding: 10px;
+ 
+}
+
+.menuI {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    top: 0;
+    right: 10px;
+}
+
+.menuI li {
+    line-height: 70px;
+    height: 70px;
+}
+
+
+    .menuI li a {
+        line-height: 70px;
+        height: 70px;
+        padding: 25px 10px;
+        transition: .5s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+
+        .menuI li a:hover {
+           
+            color: #333;
+            background-color: aliceblue;
+        }
+
+/*footer*/
+
+
+.footerC {
+    position:relative;
+   display:flex;
+   justify-content:space-around;
+   justify-items:center;
+    width:100%;
+    background-color: #1a1a1a;
+    color: aliceblue;
+    text-align: center;
+    padding: 1em 0;
+    margin-top:1em;
+}
+
+    .footerC h1 {
+        font-size: 16px;
+    }
+
+    .footerC h2 {
+        font-size: 12px;
+    }
+
+.footerLista{
+    display: flex;
+}
+
+    .footerLista li a {
+        font-family: 'TypeIcons';
+        font-size: 30px;
+        line-height: 50px;
+        height: 50px;
+        padding:5px;
+        text-decoration:none;
+        transition:.5s;
+    }
+
+.footerLista li a:hover {
+    filter: invert(70%);
+    transition: .5s;
+}
+
+.footerI h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 20px;
+    height: 20px;
+}
+
+
+/*area restrita*/
+.formularioC {
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+}
+
+.formulario{
+    width:40%;
+    height:auto;
+    padding:8em 5em;
+    margin:0 auto;
+}
+
