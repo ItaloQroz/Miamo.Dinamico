@@ -22,11 +22,7 @@ namespace Miamo.DAL
 
                 while (dr.Read())
                 {
-                   CategoriaDTO obj = new CategoriaDTO();
-                   obj.IdCategoria = Convert.ToInt32(dr["IdCategoria"]);
-                   obj.NomeCategoria = Convert.ToString(dr["NomeCategoria"]);
-
-                    lista.Add(obj);
+                   
 
                     lista.Add(new CategoriaDTO()
                     {
