@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Produtos</h1>
+    <h1><asp:Label ID="lblTitulo" runat="server" ></asp:Label></h1>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <asp:Repeater ID="rptProdutos" runat="server">

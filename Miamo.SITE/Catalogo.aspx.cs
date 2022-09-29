@@ -15,14 +15,18 @@ namespace Miamo.SITE
             int idCategoria = Convert.ToInt32(Request.QueryString["id"]);
 
             ProdutoBLL objProdutoBLL = new ProdutoBLL();
+            CategoriaBLL objCategoriaBLL = new CategoriaBLL();
+            string nomeCategoria = objCategoriaBLL.SelecionarCategoria(idCategoria).NomeCategoria;
 
             if(idCategoria != 0) 
             { 
                 rptProdutos.DataSource = objProdutoBLL.FiltrarProduto(idCategoria);
+                lblTitulo.Text = nomeCategoria;
             }
             else
             {
                 rptProdutos.DataSource = objProdutoBLL.FiltrarProduto();
+                lblTitulo.Text = "Catálogo";
             }
             rptProdutos.DataBind();
 
