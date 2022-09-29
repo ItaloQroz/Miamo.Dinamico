@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+    <div class="fundo">
     <div class="container bg-dark">
         <nav>
             <ol class="breadcrumb bg-dark">
@@ -50,5 +52,5 @@
         <br /><br />
         <br /><br />
     </div>
-
+        </div>
 </asp:Content>

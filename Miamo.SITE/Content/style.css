@@ -81,25 +81,30 @@ footer {
     }
 
         .menuI li a:hover {
-           
-            color: #333;
+            color: black;
             background-color: aliceblue;
+            text-shadow: 2px 2px 2px white;
         }
 
 /*footer*/
 
 
 .footerC {
-    position:relative;
-   display:flex;
-   justify-content:space-around;
-   justify-items:center;
-    width:100%;
-    background-color: #1a1a1a;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    background-color: #18d4c9;
     color: aliceblue;
     text-align: center;
     padding: 1em 0;
-    margin-top:1em;
+    margin-top: 1em;
+    top: 395px;
+    left: 1px;
+    height: 100px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
     .footerC h1 {
@@ -149,5 +154,12 @@ footer {
     height:auto;
     padding:8em 5em;
     margin:0 auto;
+}
+.table {
+    --bs-table-striped-bg: #18d4c98b !important;
+}
+
+.fundo {
+
 }
 
