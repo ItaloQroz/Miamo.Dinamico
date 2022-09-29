@@ -55,7 +55,7 @@
                             <asp:Repeater ID="rptMenuCategoria" runat="server">
                                 <ItemTemplate>
 
-                                    <a class="dropdown-item" href=""><%# Eval("NomeCategoria") %></a>
+                                    <a class="dropdown-item" href="Catalogo.aspx"><%# Eval("NomeCategoria") %></a>
 
                                 </ItemTemplate>
                             </asp:Repeater>
