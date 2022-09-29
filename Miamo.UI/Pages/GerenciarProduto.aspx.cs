@@ -30,11 +30,11 @@ namespace Miamo.UI.Pages
         //cadastrar (add)
         protected void gv1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName.Equals("Adicionar"))
+            if (e.CommandName.Equals("Add"))
             {
                 objModelo.NomeProduto = (gv1.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Text.Trim();
                 objModelo.TamanhoProduto = (gv1.FooterRow.FindControl("txtTamanhoProdutoFooter") as TextBox).Text.Trim();
-                objModelo.PrecoProduto = Convert.ToDecimal(gv1.FooterRow.FindControl("txtPrecoProdutoFooter") as TextBox);
+                objModelo.PrecoProduto = (gv1.FooterRow.FindControl("txtPrecoProdutoFooter") as TextBox).Text.Trim();
                 objModelo.CorProduto = (gv1.FooterRow.FindControl("txtCorProdutoFooter") as TextBox).Text.Trim();
                 //saving image
                 if ((gv1.FooterRow.FindControl("fUp1") as FileUpload).HasFile)
@@ -69,7 +69,7 @@ namespace Miamo.UI.Pages
         {
             objModelo.NomeProduto = (gv1.Rows[e.RowIndex].FindControl("txtNomeProduto") as TextBox).Text.Trim();
             objModelo.TamanhoProduto = (gv1.Rows[e.RowIndex].FindControl("txtTamanhoProduto") as TextBox).Text.Trim();
-            objModelo.PrecoProduto = Convert.ToDecimal(gv1.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox);
+            objModelo.PrecoProduto = (gv1.Rows[e.RowIndex].FindControl("txtPrecoProduto") as TextBox).Text.Trim();
             objModelo.CorProduto = (gv1.Rows[e.RowIndex].FindControl("txtCorProduto") as TextBox).Text.Trim();
             //saving image
             if ((gv1.Rows[e.RowIndex].FindControl("fUp1") as FileUpload).HasFile)

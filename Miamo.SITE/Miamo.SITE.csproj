@@ -84,6 +84,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Default.aspx" />
     <Content Include="estilos\media.css" />
     <Content Include="estilos\reset.css" />
     <Content Include="estilos\style.css" />
@@ -302,6 +303,13 @@
     </Compile>
     <Compile Include="Contato.aspx.designer.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
