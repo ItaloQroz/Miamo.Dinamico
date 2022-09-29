@@ -55,7 +55,7 @@
                             <asp:Repeater ID="rptMenuCategoria" runat="server">
                                 <ItemTemplate>
 
-                                    <a class="dropdown-item" href="Catalogo.aspx"><%# Eval("NomeCategoria") %></a>
+                                    <a class="dropdown-item" href="Catalogo.aspx?id=<%# Eval("IdCategoria") %>"><%# Eval("NomeCategoria") %></a>
 
                                 </ItemTemplate>
                             </asp:Repeater>
@@ -93,13 +93,13 @@
 
             <div>
                 <a href="https://api.whatsapp.com/send?phone=5585996823836&text=MIAMO" target="blank">
-                    <img src="icone/whatsapp.png" alt="Whatsapp" width="45px"></a>
+                    <img src="icone/whatsapp.png" alt="Whatsapp" width="50px"></a>
             
                 <a href="https://pt-br.facebook.com/miamomodaintima/" target="blank">
-                    <img src="icone/facebook-new.png" alt="Facebook" width="45px"></a>
+                    <img src="icone/facebook-new.png" alt="Facebook" width="50px"></a>
             
                 <a href="https://www.instagram.com/miamo_longewear/" target="blank">
-                    <img src="icone/instagram-icone-noir.png" alt="Instagram" width="45px"></a>
+                    <img src="icone/instagram-icone-noir.png" alt="Instagram" width="50px"></a>
             </div>
 
    

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Miamo.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,12 @@ namespace Miamo.SITE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int idCategoria = Convert.ToInt32(Request.QueryString["id"]);
+
+            ProdutoBLL objProdutoBLL = new ProdutoBLL();
+
+            rptProdutos.DataSource = objProdutoBLL.FiltrarProduto(idCategoria);
+            rptProdutos.DataBind();
 
         }
     }
