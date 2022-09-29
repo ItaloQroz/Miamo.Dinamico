@@ -177,7 +177,7 @@ namespace Miamo.DAL
                     obj.PrecoProduto = dr["PrecoProduto"].ToString();
                     obj.CorProduto = dr["CorProduto"].ToString();
                     obj.UrlImagemProduto = dr["UrlImagemProduto"].ToString();
-                    obj.CategoriaProduto = dr["CategoriaProduto"].ToString();
+                    obj.CategoriaProduto = dr["NomeCategoria"].ToString();
 
                     Lista.Add(obj);
                 }
