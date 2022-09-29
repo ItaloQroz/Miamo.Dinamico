@@ -36,14 +36,20 @@
         <div>
             <!--menu-->
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a class="navbar-brand" href="index.aspx">
-                    <asp:Image runat="server" ImageUrl="../Img/index/LogoMiamo.gif" Width="50" Height="50" />
-                    
+                <a class="navbar-brand" href="Default.aspx">
+                    <asp:Image runat="server" ImageUrl="../Img/index/LogoMiamo.gif" Width="100" Height="100" />
                 </a>
+
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="dpm1" href="index.aspx">Início</a>
+                        <a class="nav-link dropdown-toggle" id="dpm30" data-toggle="dropdown">Início</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Default.aspx#lancamentos">Novidades</a>
+                            <a class="dropdown-item" href="Default.aspx#polaroids">Nossos Produtos</a>
+                            <a class="dropdown-item" href="Default.aspx#mapa-conteudo">Nossa Localização</a>
+                            <a class="dropdown-item" href="Default.aspx#sbr-empresa">Sobre á Empresa</a>
+                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -68,6 +74,11 @@
                         <a class="nav-link" id="dpm2" href="Contato.aspx">Contato</a>
                     </li>
 
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="O Que Procura?" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Procurar</button>
+                    </form>
+
                 </ul>
             </nav>
             <br />
@@ -83,6 +94,19 @@
 
     </form>
 
+    <%--<aside class="fixed-top aside" id="vertical">
+     
+    <div>
+      <a href="https://api.whatsapp.com/send?phone=5585996823836&text=MIAMO" target="blank"><img src="icone/whatsapp.png" alt="Whatsapp" width="45px"></a>
+    </div>
+    <div>
+      <a href="https://pt-br.facebook.com/miamomodaintima/" target="blank"><img src="icone/facebook-new.png" alt="Facebook" width="45px" ></a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/miamo_longewear/" target="blank"><img src="icone/instagram-icone-noir.png" alt="Instagram" width="45px" ></a>
+    </div>
+    </aside>--%>
+
     <%--footer--%>
     <footer>
         <div class="footerC">
@@ -94,15 +118,15 @@
             <div>
                 <a href="https://api.whatsapp.com/send?phone=5585996823836&text=MIAMO" target="blank">
                     <img src="icone/whatsapp.png" alt="Whatsapp" width="50px"></a>
-            
+
                 <a href="https://pt-br.facebook.com/miamomodaintima/" target="blank">
                     <img src="icone/facebook-new.png" alt="Facebook" width="50px"></a>
-            
+
                 <a href="https://www.instagram.com/miamo_longewear/" target="blank">
                     <img src="icone/instagram-icone-noir.png" alt="Instagram" width="50px"></a>
             </div>
 
-   
+
             <div class="footerI">
                 <h2>contact@Miamo</h2>
                 <h2>© all rights reserved MIAMO 2022</h2>

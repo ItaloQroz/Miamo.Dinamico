@@ -25,7 +25,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </head>
  <body>
-    <header>
+    <%--<header>
       <nav  class="navbar navbar-expand-lg fixed-top">
         <div id="nav.menu" class="container-fluid">
           <a href="index.html"><img id="logo" src="img/index/LogoMiamo.gif" alt="logo MIAMO" /></a>
@@ -72,7 +72,7 @@
           </div>
 
       </nav>
-    </header>
+    </header>--%>
 
     <main>
       <section class="slider">
