@@ -16,7 +16,14 @@ namespace Miamo.SITE
 
             ProdutoBLL objProdutoBLL = new ProdutoBLL();
 
-            rptProdutos.DataSource = objProdutoBLL.FiltrarProduto(idCategoria);
+            if(idCategoria != 0) 
+            { 
+                rptProdutos.DataSource = objProdutoBLL.FiltrarProduto(idCategoria);
+            }
+            else
+            {
+                rptProdutos.DataSource = objProdutoBLL.FiltrarProduto();
+            }
             rptProdutos.DataBind();
 
         }
