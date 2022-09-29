@@ -103,6 +103,11 @@
     <Content Include="icone\favicon.ico" />
     <Content Include="icone\instagram-icone-noir.png" />
     <Content Include="icone\whatsapp.png" />
+    <Content Include="Img\00.jpg" />
+    <Content Include="Img\01.jpg" />
+    <Content Include="Img\05.jpg" />
+    <Content Include="Img\10.jpg" />
+    <Content Include="Img\27.jpg" />
     <Content Include="Img\add.png" />
     <Content Include="Img\cancel.png" />
     <Content Include="Img\delete.png" />

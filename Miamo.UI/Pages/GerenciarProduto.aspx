@@ -87,7 +87,7 @@
                 <EditItemTemplate>
                     <asp:DropDownList ID="ddl1" runat="server">
 
-                        <asp:ListItem Selected="True" Text="Selecione" />
+                        <asp:ListItem Selected="True" Text="Selecione" />                        
                         <asp:ListItem Value="1" Text="Lançamentos" />
                         <asp:ListItem Value="2" Text="Modeladores" />
                         <asp:ListItem Value="3" Text="Camisolas" />

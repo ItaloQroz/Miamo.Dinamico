@@ -26,6 +26,7 @@ namespace Miamo.UI.Pages
                 PopularGV();
                 lblMessage.Text = string.Empty;
             }
+                        
         }
         //cadastrar (add)
         protected void gv1_RowCommand(object sender, GridViewCommandEventArgs e)
