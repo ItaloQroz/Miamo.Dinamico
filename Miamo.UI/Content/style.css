@@ -30,13 +30,13 @@ main{
 }
 
 footer {
-    padding-top: 50px;
+    padding-top: 2000px;
 
 }
 
 .menuC{
     width:100%;
-    height:70px;
+    height:85px;
     background-color:#18d4c9;
 }
 
@@ -51,7 +51,7 @@ footer {
     }
 
 .logo {
-    height: 70px;
+    height: 90px;
     padding: 10px;
 }
 

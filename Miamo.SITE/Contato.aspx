@@ -3,17 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-    <div class="fundo">
-    <div class="container bg-dark">
-        <nav>
-            <ol class="breadcrumb bg-dark">
-                <li class="breadcrumb-item "><a href="Default.aspx">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contato</li>
-            </ol>
-        </nav>
+    <div class="container fundo">
+      <div class="Centro">
         <h1 class="text-light font-weight-light" style="font-size: 60px">Fale Conosco</h1>
-
+         
         <br />
         <asp:Label runat="server" Text="Nome" AssociatedControlID="txtNome" CssClass="text-light lead" />
         <asp:TextBox runat="server" ID="txtNome" CssClass="form-control" MaxLength="100" Width="50%" />
@@ -46,11 +39,14 @@
         <br /><br />
         <asp:Label ID="lblMensagem" runat="server" CssClass="text-light lead" />
 
+
         <br /><br />
         <br /><br />
         <br /><br />
         <br /><br />
         <br /><br />
-    </div>
+       
         </div>
+   </div>
+        
 </asp:Content>

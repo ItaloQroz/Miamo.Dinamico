@@ -37,7 +37,7 @@
             <!--menu-->
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="Default.aspx">
-                    <asp:Image runat="server" ImageUrl="../Img/index/LogoMiamo.gif" Width="100" Height="100" />
+                    <asp:Image runat="server" ImageUrl="../Img/index/LogoMiamo.gif" Width="90" Height="90" />
                 </a>
 
                 <ul class="navbar-nav ml-auto">
