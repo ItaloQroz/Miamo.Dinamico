@@ -4,13 +4,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    
+    <div class="back">
     <h1><asp:Label ID="lblTitulo" runat="server" ></asp:Label></h1>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 back">
         <asp:Repeater ID="rptProdutos" runat="server">
             <ItemTemplate>
                 <div class="col">
 
+                    <div class="img">
                     <div class="card shadow-sm">
                         <img src="<%# Eval("UrlImagemProduto").ToString().Replace("~",".") %>" class="bd-placeholder-img card-img-top" width="100%" height="" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false">
                             <title><%# Eval("NomeProduto") %></title>
@@ -23,6 +26,7 @@
                                 <%# Eval("CorProduto") %>
                             </text>
                         </img>
+                        </div>
 
                         <div class="card-body">
                             <p class="card-text"></p>
@@ -35,6 +39,6 @@
             </ItemTemplate>
         </asp:Repeater>
     </div>
-
+        </div>
 
 </asp:Content>

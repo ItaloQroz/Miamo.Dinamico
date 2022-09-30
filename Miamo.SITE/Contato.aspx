@@ -5,9 +5,9 @@
 
 
     <div class="fundo">
-    <div class="container bg-dark">
+    <div class="container bg">
         <nav>
-            <ol class="breadcrumb bg-dark">
+            <ol class="breadcrumb">
                 <li class="breadcrumb-item "><a href="Default.aspx">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contato</li>
             </ol>
