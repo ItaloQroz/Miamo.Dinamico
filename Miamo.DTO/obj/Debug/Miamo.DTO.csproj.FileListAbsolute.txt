@@ -16,3 +16,9 @@ C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.cspro
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.dll
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DTO\obj\Debug\Miamo.DTO.pdb
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\bin\Debug\Miamo.DTO.dll
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\bin\Debug\Miamo.DTO.pdb
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.AssemblyReference.cache
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\obj\Debug\Miamo.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\obj\Debug\Miamo.DTO.dll
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DTO\obj\Debug\Miamo.DTO.pdb

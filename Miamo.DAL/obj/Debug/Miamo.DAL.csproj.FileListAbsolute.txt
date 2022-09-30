@@ -25,3 +25,12 @@ C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DAL\obj\Debug\Miamo.DAL.cspro
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CopyComplete
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DAL\obj\Debug\Miamo.DAL.dll
 C:\Users\Gustavo\source\repos\Miamo.Dinamico\Miamo.DAL\obj\Debug\Miamo.DAL.pdb
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\bin\Debug\Miamo.DAL.dll
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\bin\Debug\Miamo.DAL.pdb
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\bin\Debug\Miamo.DTO.dll
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\bin\Debug\Miamo.DTO.pdb
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.AssemblyReference.cache
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\obj\Debug\Miamo.DAL.csproj.CopyComplete
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\obj\Debug\Miamo.DAL.dll
+C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.DAL\obj\Debug\Miamo.DAL.pdb
