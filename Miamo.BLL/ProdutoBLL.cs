@@ -51,5 +51,7 @@ namespace Miamo.BLL
         {
             return objBLL.Selecionar(idProduto);
         }
+
+       
     }
 }
