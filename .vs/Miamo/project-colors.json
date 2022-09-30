@@ -5,7 +5,22 @@
       "ProjectGuid": "579746b4-2916-48a7-8ac5-9c114c87cbe2",
       "DisplayName": "Miamo.DTO",
       "ColorIndex": 0
+    },
+    "452a5cac-a808-41ef-bb79-a2c7bae7e377": {
+      "ProjectGuid": "452a5cac-a808-41ef-bb79-a2c7bae7e377",
+      "DisplayName": "Miamo.DAL",
+      "ColorIndex": 1
+    },
+    "abf49412-5702-4636-9fde-1d94f9774d27": {
+      "ProjectGuid": "abf49412-5702-4636-9fde-1d94f9774d27",
+      "DisplayName": "Miamo.SITE",
+      "ColorIndex": 2
+    },
+    "71c97876-c5d6-4b42-a7a6-50b1e631dff5": {
+      "ProjectGuid": "71c97876-c5d6-4b42-a7a6-50b1e631dff5",
+      "DisplayName": "Miamo.UI",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }
