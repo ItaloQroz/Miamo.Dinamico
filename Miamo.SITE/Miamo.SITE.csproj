@@ -196,6 +196,7 @@
     <Content Include="js\jquery.mask.js" />
     <Content Include="js\Script.js" />
     <Content Include="js\trocaimagem.js" />
+    <Content Include="Produto.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -317,6 +318,13 @@
     </Compile>
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Produto.aspx.cs">
+      <DependentUpon>Produto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produto.aspx.designer.cs">
+      <DependentUpon>Produto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
