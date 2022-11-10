@@ -21,6 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </head>
@@ -74,99 +76,19 @@
       </nav>
     </header>--%>
 
+     
+
+
     <main>
-      <section class="slider">
-        <div class="container-fluid header">
-          <div class="row">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="img/index/bannerteste.jpg"
-                    alt="Primeiro Slide"
-                  />
-                  <!-- <div class="carousel-caption d-none d-md-block"> -->
-                  <div class="carousel-caption text-left">
-                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
-                    <p class="font-italic texto"></p>
-                    <p class="font-italic texto"></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/index/bannerteste.jpg"
-                    alt="Segundo Slide"
-                  />
-                  <div class="carousel-caption text-left">
-                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
-                    <p class="font-italic texto"></p>
-                    <p class="font-italic texto"></p>
-                    <p class="font-italic texto"></p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="img/index/bannerteste.jpg"
-                    alt="Terceiro Slide"
-                  />
-                  <div class="carousel-caption text-left">
-                    <h2 class="mb-sm-1 mb-lg-2 mb-xl-5 texto font-italic"></h2>
-                    <p class="font-italic texto"></p >
-                    <p class="font-italic texto"></p>
-                    <p class="font-italic texto"></p>
-                  </div>
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselExampleIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Próximo</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
+                 <asp:Repeater ID="rptrImages" runat="server">
+                    <ItemTemplate>
+                        <div class="item <%#GetActiveClass(Container.ItemIndex) %> -block w-100"">
+                            <img src="Img/index/<%#Eval("NomeIMG") %><%#Eval("NomeDescricaoIMG") %>" alt="<%#Eval("NomeIMG") %>" />
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+          
 
       <section>
         <div id="lancamentos">
@@ -176,6 +98,9 @@
             Fique de olho em nossos lançamentos! Dá só uma olhada em nossas novidades!
           </p>
         </div>
+
+
+
           <!-- PrimeiroGrid -->
           
         <div class="conteudoAoMeio grid">

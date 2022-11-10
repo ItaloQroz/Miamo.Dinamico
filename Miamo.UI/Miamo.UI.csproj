@@ -212,6 +212,7 @@
     <Content Include="Pages\GerenciarProduto.aspx" />
     <Content Include="Pages\GerenciarUsuario.aspx" />
     <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\UploadIMG.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -256,6 +257,13 @@
     </Compile>
     <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UploadIMG.aspx.cs">
+      <DependentUpon>UploadIMG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UploadIMG.aspx.designer.cs">
+      <DependentUpon>UploadIMG.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

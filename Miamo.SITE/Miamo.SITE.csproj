@@ -192,8 +192,11 @@
     <Content Include="Img\index\pijamaMasculinoAzulClaro02.jpeg" />
     <Content Include="Img\index\pijamaMasculinoAzulEscuro01.jpeg" />
     <Content Include="Img\index\SutiaAmamentacao1.jpeg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.6.0.min.js" />
     <Content Include="js\jquery.mask.js" />
+    <Content Include="js\npm.js" />
     <Content Include="js\Script.js" />
     <Content Include="js\trocaimagem.js" />
     <Content Include="Produto.aspx" />
