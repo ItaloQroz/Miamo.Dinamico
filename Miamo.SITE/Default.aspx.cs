@@ -27,7 +27,7 @@ namespace Miamo.SITE
             string cs = ConfigurationManager.ConnectionStrings["MiamoConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                SqlCommand cmd = new SqlCommand("SELECT [NomeIMG],[ExtensaoImg] FROM ImgCarrousel", con);
+                SqlCommand cmd = new SqlCommand("SELECT [NomeIMG],[NomeDescricaoIMG] FROM ImgCarrousel", con);
                 con.Open();
                 using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                 {
