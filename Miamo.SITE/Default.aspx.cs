@@ -24,33 +24,33 @@ namespace Miamo.SITE
 
         private void BindImageRepeater()
         {
-            string cs = ConfigurationManager.ConnectionStrings["MiamoConnectionString"].ConnectionString;
-            using (SqlConnection con = new SqlConnection(cs))
-            {
-                SqlCommand cmd = new SqlCommand("SELECT [NomeIMG],[ExtensaoImg] FROM ImgCarrousel", con);
-                con.Open();
-                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
-                {
-                    DataTable dt = new DataTable();
-                    sda.Fill(dt);
-                    rptrImages.DataSource = dt;
-                    rptrImages.DataBind();
+            //string cs = ConfigurationManager.ConnectionStrings["MiamoConnectionString"].ConnectionString;
+            //using (SqlConnection con = new SqlConnection(cs))
+            //{
+            //    SqlCommand cmd = new SqlCommand("SELECT [NomeIMG],[ExtensaoImg] FROM ImgCarrousel", con);
+            //    con.Open();
+            //    using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+            //    {
+            //        DataTable dt = new DataTable();
+            //        sda.Fill(dt);
+            //        rptrImages.DataSource = dt;
+            //        rptrImages.DataBind();
 
-                }
+            //    }
 
-            }
+            //}
         }
 
-        protected string GetActiveClass(int ItemIndex)
-        {
-            if (ItemIndex == 0)
-            {
-                return "active";
-            }
-            else
-            {
-                return "";
-            }
-        }
+        //protected string GetActiveClass(int ItemIndex)
+        //{
+        //    if (ItemIndex == 0)
+        //    {
+        //        return "active";
+        //    }
+        //    else
+        //    {
+        //        return "";
+        //    }
+        //}
     }
 }
