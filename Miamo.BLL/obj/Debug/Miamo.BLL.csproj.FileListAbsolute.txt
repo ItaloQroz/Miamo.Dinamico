@@ -42,3 +42,14 @@ C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.BLL\obj\Debug\Miamo.BLL.c
 C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CopyComplete
 C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.BLL\obj\Debug\Miamo.BLL.dll
 C:\Users\Romilson\source\repos\Miamo.Dinamico(2)\Miamo.BLL\obj\Debug\Miamo.BLL.pdb
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.BLL.dll
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.BLL.pdb
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DAL.dll
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DTO.dll
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DAL.pdb
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\bin\Debug\Miamo.DTO.pdb
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.AssemblyReference.cache
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CoreCompileInputs.cache
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.csproj.CopyComplete
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.dll
+C:\Users\italo.qfsousa\Source\Repos\Miamo.Dinamico\Miamo.BLL\obj\Debug\Miamo.BLL.pdb
